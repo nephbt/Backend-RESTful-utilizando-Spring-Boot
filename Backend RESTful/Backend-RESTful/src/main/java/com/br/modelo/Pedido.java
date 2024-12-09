@@ -6,7 +6,6 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.Data;
 
-import java.util.List;
 
 @Entity
 @Data
@@ -15,5 +14,5 @@ public class Pedido {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private Long idCliente;
-    private List<Long> idsProdutos ;
+    private Long idProduto;
 }
